@@ -11,14 +11,17 @@ import "src/TwapWeightedObserver.sol";
 import "src/U72_OptimizedTwap.sol";
 import "src/OPTIMIZED_RelativeTwapWeightedObserver.sol";
 import "src/ExampleTwap.sol";
+import "src/ExampleImport.sol";
 
 abstract contract Setup is BaseSetup {
 
     INLINED_OPTIMIZED_RelativeTwapWeightedObserver iNLINED_OPTIMIZED_RelativeTwapWeightedObserver;
     REFERENCE_RelativeTwapWeightedObserver rEFERENCE_RelativeTwapWeightedObserver;
+    ExampleImport exampleImport;
 
     function setup() internal virtual override {
-      iNLINED_OPTIMIZED_RelativeTwapWeightedObserver = new INLINED_OPTIMIZED_RelativeTwapWeightedObserver(0); // TODO: Add parameters here
-      rEFERENCE_RelativeTwapWeightedObserver = new REFERENCE_RelativeTwapWeightedObserver(0); // TODO: Add parameters here
+        iNLINED_OPTIMIZED_RelativeTwapWeightedObserver = new INLINED_OPTIMIZED_RelativeTwapWeightedObserver(0); // TODO: Add parameters here
+        rEFERENCE_RelativeTwapWeightedObserver = new REFERENCE_RelativeTwapWeightedObserver(0); // TODO: Add parameters here
+        exampleImport = new ExampleImport();
     }
 }

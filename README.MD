@@ -1,3 +1,17 @@
+# POC for medusa compilation settings
+
+## with `--foundry-compile-all` flag
+### `medusa fuzz --config medusa-all.json`
+
+![Screenshot](images/with_all.jpg)
+
+## without `--foundry-compile-all` flag (pointing to CryticTester)
+### `medusa fuzz --config medusa.json` or (`medusa fuzz`)
+
+![Screenshot](images/crytic_only.jpg)
+
+** Note: medusa.json should be in the same directory as the foundry.toml file **
+
 # NOT AUDITED - YOU WILL REK YOURSELF
 
 - Release Candidate: OPTIMIZED_RelativeTwapWeightedObserver

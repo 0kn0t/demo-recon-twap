@@ -36,4 +36,8 @@ abstract contract TargetFunctions is BaseTargetFunctions, Properties, BeforeAfte
     function rEFERENCE_RelativeTwapWeightedObserver_update() public {
       rEFERENCE_RelativeTwapWeightedObserver.update();
     }
+
+    function exampleImport_letsViolate() public {
+      exampleImport.letsViolate();
+    }
 }
