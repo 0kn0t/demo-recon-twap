@@ -73,10 +73,12 @@
   "compilation": {
     "platform": "crytic-compile",
     "platformConfig": {
-      "target": "test/recon/CryticTester.sol",
+      "target": ".",
       "solcVersion": "",
       "exportDirectory": "",
-      "args": []
+      "args": [
+        "--foundry-compile-all"
+      ]
     }
   },
   "logging": {
